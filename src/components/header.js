@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import styled from "@emotion/styled"
 import PropTypes from "prop-types"
 import React from "react"
+import logo from '../images/outland.png';
 
 const Content = styled.div`
   max-width: 860px;
@@ -10,7 +11,7 @@ const Content = styled.div`
 `
 
 const NavLink = styled(Link)`
-  color: black;
+  color: white;
   margin-left: 15px;
   text-decoration: none;
   display: inline-block;
@@ -76,11 +77,10 @@ const Header = ({ siteTitle }) => (
   <SiteHeader>
     <Content>
       <p>
-        <HomeLink to="/">{siteTitle}</HomeLink>
-        <NavLink to="/blog">Blog</NavLink>
-        <GitHubLink href="https://github.com/niklasmtj/gatsby-starter-julia">
-          GitHub
-        </GitHubLink>
+        <HomeLink to="/">
+        <img className="outlandLogo" src={logo} alt={siteTitle} />
+        </HomeLink>
+        {/* <NavLink to="/blog">Blog</NavLink> */}
       </p>
     </Content>
   </SiteHeader>

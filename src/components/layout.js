@@ -18,6 +18,7 @@ const Content = styled.div`
   max-width: 860px;
   padding: 0 1.0875rem 1rem;
   padding-top: 0;
+  color:#fff;
 `
 
 const GatsbyLink = styled.a`
@@ -27,6 +28,7 @@ const GatsbyLink = styled.a`
 const Footer = styled.footer`
   display: flex;
   justify-content: center;
+  align-self: flex-end;
 `
 
 const Layout = ({ children }) => (
@@ -44,13 +46,11 @@ const Layout = ({ children }) => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
         <Content>
-          <main>{children}</main>
+          {/* <main>{children}</main> */}
           <Footer>
             <p>
-            © {new Date().getFullYear()}, Built with
-            {` `}
+            © {new Date().getFullYear()}
             </p>
-            <GatsbyLink href="https://www.gatsbyjs.org">Gatsby</GatsbyLink>
           </Footer>
         </Content>
       </>
