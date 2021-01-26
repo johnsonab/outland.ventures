@@ -63,7 +63,7 @@ const GitHubLink = styled.a`
 `
 
 const HomeLink = styled(NavLink)`
-  margin-left: 0;
+  margin: auto;
 `
 
 const SiteHeader = styled.header`
@@ -71,17 +71,17 @@ const SiteHeader = styled.header`
   display: flex;
   align-content: center;
   justify-content: center;
+  min-height: 90vh;
+  align-items: stretch;
 `
 
 const Header = ({ siteTitle }) => (
   <SiteHeader>
     <Content>
-      <p>
         <HomeLink to="/">
         <img className="outlandLogo" src={logo} alt={siteTitle} />
         </HomeLink>
         {/* <NavLink to="/blog">Blog</NavLink> */}
-      </p>
     </Content>
   </SiteHeader>
 )

@@ -18,7 +18,7 @@ const Content = styled.div`
   max-width: 860px;
   padding: 0 1.0875rem 1rem;
   padding-top: 0;
-  color:#fff;
+  color:#444;
 `
 
 const GatsbyLink = styled.a`
@@ -28,7 +28,6 @@ const GatsbyLink = styled.a`
 const Footer = styled.footer`
   display: flex;
   justify-content: center;
-  align-self: flex-end;
 `
 
 const Layout = ({ children }) => (
